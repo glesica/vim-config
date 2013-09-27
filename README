@@ -1,0 +1,24 @@
+Vim Configuration
+George Lesica <george@lesica.com>
+
+This is my Vim configuration. It uses Pathogen to manage plugins and includes a
+handy script to set up all the necessary symlinks without totally clobbering
+the existing configuration files.
+
+Some notes on setup and using Pathogen:
+
+To clone submodules (plugin repos):
+
+    git submodule init
+    git submodule update
+
+To add an additional plugin repo:
+
+    git submodule add <remote> vim/bundle/<name>
+    git commit -m 'Added plugin <name>'
+
+To use Vimballs:
+
+    :e name.vba
+    :!mkdir ~/.vim/bundle/name
+    :UseVimball ~/.vim/bundle/name
