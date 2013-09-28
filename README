@@ -5,6 +5,9 @@ This is my Vim configuration. It uses Pathogen to manage plugins and includes a
 handy script to set up all the necessary symlinks without totally clobbering
 the existing configuration files.
 
+A list of plugins I am using, including links, can be found at 
+http://lesica.com/vim-plugins.html
+
 Some notes on setup and using Pathogen:
 
 To clone submodules (plugin repos):
