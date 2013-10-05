@@ -55,3 +55,6 @@
 [submodule "vim/bundle/vim-elixir"]
 	path = vim/bundle/vim-elixir
 	url = https://github.com/elixir-lang/vim-elixir.git
+[submodule "vim/bundle/CoVim"]
+	path = vim/bundle/CoVim
+	url = https://github.com/FredKSchott/CoVim.git
