@@ -58,3 +58,6 @@
 [submodule "vim/bundle/vim-signify"]
 	path = vim/bundle/vim-signify
 	url = https://github.com/mhinz/vim-signify.git
+[submodule "vim/bundle/over"]
+	path = vim/bundle/over
+	url = git@github.com:osyo-manga/vim-over.git
