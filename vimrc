@@ -58,6 +58,8 @@ set hlsearch                    " Highlight search hits
 " Clear search highlighting with F3
 nnoremap <F3> :nohlsearch<CR>
 inoremap <F3> <esc>:nohlsearch<CR>i
+" Start a new vim-over command line
+nnoremap <F4> :OverCommandLine<CR>
 
 " ------------------------------------------------------------------------------
 "  Tagbar plugin (https://github.com/majutsushi/tagbar/)
