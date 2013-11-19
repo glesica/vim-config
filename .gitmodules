@@ -61,3 +61,6 @@
 [submodule "vim/bundle/over"]
 	path = vim/bundle/over
 	url = git@github.com:osyo-manga/vim-over.git
+[submodule "vim/bundle/vim-golang"]
+	path = vim/bundle/vim-golang
+	url = git@github.com:jnwhiteh/vim-golang.git
