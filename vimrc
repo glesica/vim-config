@@ -32,6 +32,7 @@ set foldmethod=indent           " Fold text based on indentation level
 set foldlevel=10                " Number of folding levels
 set nofoldenable                " Open all folds by default
 " Set a width for text documents so wrapping happens automatically
+" Also enable spell checking automatically
 augroup document
     autocmd!
     autocmd BufRead,BufNewFile *.markdown setlocal textwidth=80
@@ -39,6 +40,11 @@ augroup document
     autocmd BufRead,BufNewFile *.rst setlocal textwidth=80
     autocmd BufRead,BufNewFile *.txt setlocal textwidth=80
     autocmd BufRead,BufNewFile *.wiki setlocal textwidth=80
+    autocmd BufRead,BufNewFile *.markdown setlocal spell
+    autocmd BufRead,BufNewFile *.md setlocal spell
+    autocmd BufRead,BufNewFile *.rst setlocal spell
+    autocmd BufRead,BufNewFile *.txt setlocal spell
+    autocmd BufRead,BufNewFile *.wiki setlocal spell
 augroup END
 
 " ------------------------------------------------------------------------------
