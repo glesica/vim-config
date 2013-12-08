@@ -67,3 +67,6 @@
 [submodule "julia-vim"]
 	path = julia-vim
 	url = git@github.com:JuliaLang/julia-vim.git
+[submodule "vim/bundle/julia-vim"]
+	path = vim/bundle/julia-vim
+	url = https://github.com/JuliaLang/julia-vim.git
