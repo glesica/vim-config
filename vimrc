@@ -12,7 +12,7 @@ Helptags
 "  Syntax and appearance                                                    {{{1
 " ------------------------------------------------------------------------------
 syntax on
-colorscheme jellybeans
+colorscheme slate
 set number                      " Line numbering on
 set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\ [%l/%L\ (%p%%)
 set nocompatible
