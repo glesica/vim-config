@@ -124,6 +124,10 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 augroup code
     autocmd!
     autocmd FileType python :iabbrev <buffer> iff if:<left>
+    " Multi-line comments
+    autocmd FileType javascript vnoremap <leader>mn :s/^/\/\//<cr>:nohlsearch<cr>
+    autocmd FileType python vnoremap <leader>mn :s/^/#/<cr>:nohlsearch<cr>
+    autocmd FileType julia vnoremap <leader>mn :s/^/#/<cr>:nohlsearch<cr>
 augroup END
 
 " -----------------
