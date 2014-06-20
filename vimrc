@@ -125,3 +125,11 @@ augroup code
     autocmd!
     autocmd FileType python :iabbrev <buffer> iff if:<left>
 augroup END
+
+" -----------------
+" Nerdtree commands
+" -----------------
+
+nnoremap <C-n> :NERDTreeToggle<CR>
+autocmd vimenter * if !argc() | NERDTree | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
