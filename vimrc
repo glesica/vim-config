@@ -12,7 +12,10 @@ Helptags
 "  Syntax and appearance                                                    {{{1
 " ------------------------------------------------------------------------------
 syntax on
-colorscheme distinguished
+set t_Co=256
+let g:solarized_termcolors=256
+colorscheme solarized
+set bg=light
 set number                      " Line numbering on
 set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\ [%l/%L\ (%p%%)
 set nocompatible
