@@ -88,3 +88,6 @@
 [submodule "vim/bundle/pyte"]
 	path = vim/bundle/pyte
 	url = git@github.com:vim-scripts/pyte.git
+[submodule "vim/bundle/summerfruit256"]
+	path = vim/bundle/summerfruit256
+	url = git@github.com:vim-scripts/summerfruit256.vim.git
