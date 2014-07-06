@@ -85,3 +85,6 @@
 [submodule "vim/bundle/vim-colors-pencil"]
 	path = vim/bundle/vim-colors-pencil
 	url = https://github.com/reedes/vim-colors-pencil
+[submodule "vim/bundle/pyte"]
+	path = vim/bundle/pyte
+	url = git@github.com:vim-scripts/pyte.git
