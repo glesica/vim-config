@@ -91,3 +91,6 @@
 [submodule "vim/bundle/summerfruit256"]
 	path = vim/bundle/summerfruit256
 	url = git@github.com:vim-scripts/summerfruit256.vim.git
+[submodule "vim/bundle/autumnleaf_modified"]
+	path = vim/bundle/autumnleaf_modified
+	url = git@github.com:vim-scripts/autumnleaf_modified.vim.git
