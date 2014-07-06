@@ -82,3 +82,6 @@
 [submodule "vim/bundle/typescript-vim"]
 	path = vim/bundle/typescript-vim
 	url = git@github.com:leafgarland/typescript-vim.git
+[submodule "vim/bundle/vim-colors-pencil"]
+	path = vim/bundle/vim-colors-pencil
+	url = https://github.com/reedes/vim-colors-pencil
