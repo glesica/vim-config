@@ -14,7 +14,7 @@ Helptags
 syntax on
 set t_Co=256
 let g:solarized_termcolors=256
-colorscheme solarized
+colorscheme distinguished
 set bg=light
 set number                      " Line numbering on
 set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\ [%l/%L\ (%p%%)
