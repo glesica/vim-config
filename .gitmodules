@@ -94,6 +94,3 @@
 [submodule "vim/bundle/autumnleaf_modified"]
 	path = vim/bundle/autumnleaf_modified
 	url = git@github.com:vim-scripts/autumnleaf_modified.vim.git
-[submodule "vim-rust"]
-	path = vim-rust
-	url = https://github.com/wting/rust.vim.git
