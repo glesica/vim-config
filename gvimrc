@@ -1,3 +1,3 @@
-set guifont=Droid\ Sans\ Mono\ Slashed\ 11,Monospace\ 11
+set guifont=Droid\ Sans\ Mono\ Slashed,Monospace
 colorscheme jellybeans
 set guioptions-=T
