@@ -21,6 +21,7 @@ set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\ [%l/%L\ (%p%%)
 set nocompatible
 set enc=utf-8
 set title                       " Modify terminal title
+set mouse=a                     " Make the mouse work in terminal
 
 " ------------------------------------------------------------------------------
 "  Default text and line formatting                                         {{{1
