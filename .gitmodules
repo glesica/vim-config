@@ -100,3 +100,6 @@
 [submodule "vim/bundle/vim-ecliptic"]
 	path = vim/bundle/vim-ecliptic
 	url = git@github.com:richsoni/vim-ecliptic.git
+[submodule "vim/bundle/vim-racket"]
+	path = vim/bundle/vim-racket
+	url = git@github.com:wlangstroth/vim-racket.git
