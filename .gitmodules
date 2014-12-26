@@ -103,3 +103,6 @@
 [submodule "vim/bundle/vim-racket"]
 	path = vim/bundle/vim-racket
 	url = git@github.com:wlangstroth/vim-racket.git
+[submodule "vim/bundle/vim-ansible-yaml"]
+	path = vim/bundle/vim-ansible-yaml
+	url = git@github.com:chase/vim-ansible-yaml.git
