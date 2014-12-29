@@ -106,3 +106,6 @@
 [submodule "vim/bundle/vim-ansible-yaml"]
 	path = vim/bundle/vim-ansible-yaml
 	url = git@github.com:chase/vim-ansible-yaml.git
+[submodule "vim/bundle/vim-lfe"]
+	path = vim/bundle/vim-lfe
+	url = git@github.com:lfex/vim-lfe.git
