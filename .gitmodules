@@ -109,3 +109,6 @@
 [submodule "vim/bundle/vim-lfe"]
 	path = vim/bundle/vim-lfe
 	url = git@github.com:lfex/vim-lfe.git
+[submodule "vim/bundle/vim-json"]
+	path = vim/bundle/vim-json
+	url = git@github.com:elzr/vim-json.git
