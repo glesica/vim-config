@@ -149,3 +149,9 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 
 autocmd QuickFixCmdPost [^l]* nested cwindow
 autocmd QuickFixCmdPost    l* nested lwindow
+
+" ----------------
+" Go setup
+" ----------------
+
+let g:go_auto_type_info = 1
