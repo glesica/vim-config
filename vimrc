@@ -70,6 +70,7 @@ nnoremap <F3> :nohlsearch<CR>
 inoremap <F3> <esc>:nohlsearch<CR>i
 " Start a new vim-over command line
 nnoremap <F4> :OverCommandLine<CR>
+set omnifunc=syntaxcomplete#Complete
 
 " ------------------------------------------------------------------------------
 "  Tagbar plugin (https://github.com/majutsushi/tagbar/)
