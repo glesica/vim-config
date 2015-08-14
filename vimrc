@@ -65,6 +65,7 @@ set statusline+=%{SyntasticStatuslineFlag()}
 " ------------------------------------------------------------------------------
 
 set autoindent                  " Match indent level for new lines
+set backspace=indent,eol,start  " More normal backspace behavior
 set expandtab                   " Expand tabs to spaces
 set foldlevel=10                " Number of folding levels
 set foldmethod=indent           " Fold text based on indentation level
