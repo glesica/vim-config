@@ -1,27 +1,25 @@
 Vim Configuration
 George Lesica <george@lesica.com>
 
-This is my Vim configuration. It uses Pathogen to manage plugins and includes a
-handy script to set up all the necessary symlinks without totally clobbering
-the existing configuration files.
+This is my Vim configuration. It uses Vundle to manage plugins and includes a
+handy script to set up all the necessary symlinks without clobbering the
+existing configuration files.
 
-A list of plugins I am using, including links, can be found at 
-http://lesica.com/vim-plugins.html
+Some notes on setup and using Vundle:
 
-Some notes on setup and using Pathogen:
-
-To clone submodules (plugin repos):
+Vundle is included as a submodule to make installation simpler. To clone:
 
     git submodule init
     git submodule update
 
-To add an additional plugin repo:
+To add an additional plugin repo just add an entry in the vimrc file.
 
-    git submodule add <remote> vim/bundle/<name>
-    git commit -m 'Added plugin <name>'
+    Plugin 'tpope/vim-fugitive' " Adds fugitive plugin
 
-To use Vimballs:
+To install plugins:
 
-    :e name.vba
-    :!mkdir ~/.vim/bundle/name
-    :UseVimball ~/.vim/bundle/name
+    :PluginInstall
+
+Or, from the shell, to install plugins and quit:
+
+    vim +PluginInstall +qall
