@@ -57,6 +57,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_ocaml_checkers = ['merlin']
 set statusline+=%#warningmsg#
 set statusline+=%*
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -192,3 +193,16 @@ augroup END
 nnoremap <C-n> :NERDTreeToggle<CR>
 autocmd vimenter * if !argc() | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+" ------------------------------------------------------------------------------
+" OCaml
+" ------------------------------------------------------------------------------
+
+let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
+
+" $ opam install merlin
+execute "set rtp+=" . g:opamshare . "/merlin/vim"
+execute "helptags " . g:opamshare . "/merlin/vim/doc"
+
+" $ opam install ocp-indent
+execute ":source " . g:opamshare . "/vim/syntax/ocp-indent.vim"
