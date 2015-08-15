@@ -43,7 +43,8 @@ call vundle#end()
 syntax on
 colorscheme distinguished
 set bg=light
-set enc=utf-8
+set encoding=utf-8
+set laststatus=2
 set mouse=a                     " Make the mouse work in terminal
 set nocompatible
 set number                      " Line numbering on
