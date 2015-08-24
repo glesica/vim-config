@@ -201,11 +201,13 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
 
 " $ opam install merlin
-execute "set rtp+=" . g:opamshare . "/merlin/vim"
-execute "helptags " . g:opamshare . "/merlin/vim/doc"
+if isdirectory(g:opamshare)
+    execute "set rtp+=" . g:opamshare . "/merlin/vim"
+    execute "helptags " . g:opamshare . "/merlin/vim/doc"
 
-" $ opam install ocp-indent
-execute ":source " . g:opamshare . "/vim/syntax/ocp-indent.vim"
+    " $ opam install ocp-indent
+    execute ":source " . g:opamshare . "/vim/syntax/ocp-indent.vim"
+endif
 
 " ------------------------------------------------------------------------------
 " Julia
