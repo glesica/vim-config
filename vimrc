@@ -31,7 +31,7 @@ Plugin 'osyo-manga/vim-over'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-markdown'
-Plugin 'vim-scripts/bufexplorer.zip'
+Plugin 'jlanzarotta/bufexplorer'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
@@ -73,7 +73,6 @@ set foldlevel=10                " Number of folding levels
 set foldmethod=indent           " Fold text based on indentation level
 set nofoldenable                " Open all folds by default
 set shiftwidth=4                " Autoindent 4 spaces
-set smartindent                 " Auto-indenting for certain languages
 set smarttab                    " Backspace through space-tabs
 set tabstop=4                   " Tab 4 spaces
 
@@ -117,6 +116,10 @@ inoremap <F3> <esc>:nohlsearch<CR>i
 " Start a new vim-over command line
 nnoremap <F4> :OverCommandLine<CR>
 set omnifunc=syntaxcomplete#Complete
+
+" Center search results vertically
+nnoremap n nzz
+nnoremap N Nzz
 
 " ------------------------------------------------------------------------------
 "  Tagbar plugin (https://github.com/majutsushi/tagbar/)
