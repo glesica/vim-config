@@ -90,6 +90,8 @@ augroup document
     autocmd BufRead,BufNewFile *.txt setlocal textwidth=80
     autocmd BufRead,BufNewFile *.wiki setlocal spell
     autocmd BufRead,BufNewFile *.wiki setlocal textwidth=80
+    autocmd BufRead,BufNewFile *.tex setlocal spell
+    autocmd BufRead,BufNewFile *.tex setlocal textwidth=100
 augroup END
 
 " ------------------------------------------------------------------------------
