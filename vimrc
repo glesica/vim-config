@@ -18,10 +18,12 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+Plugin 'dart-lang/dart-vim-plugin'
 Plugin 'Lokaltog/vim-distinguished'
 Plugin 'bling/vim-airline'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'elzr/vim-json'
+Plugin 'idris-hackers/idris-vim'
 Plugin 'JuliaLang/julia-vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'majutsushi/tagbar'
