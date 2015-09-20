@@ -43,7 +43,7 @@ call vundle#end()
 " ------------------------------------------------------------------------------
 
 syntax on
-colorscheme distinguished
+colorscheme jellybeans
 set bg=light
 set encoding=utf-8
 set laststatus=2
