@@ -18,22 +18,23 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'dart-lang/dart-vim-plugin'
-Plugin 'Lokaltog/vim-distinguished'
 Plugin 'bling/vim-airline'
+Plugin 'dart-lang/dart-vim-plugin'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'elzr/vim-json'
 Plugin 'idris-hackers/idris-vim'
+Plugin 'jlanzarotta/bufexplorer'
 Plugin 'JuliaLang/julia-vim'
 Plugin 'kien/ctrlp.vim'
+Plugin 'Lokaltog/vim-distinguished'
 Plugin 'majutsushi/tagbar'
 Plugin 'mhinz/vim-signify'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'osyo-manga/vim-over'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
-Plugin 'tpope/vim-markdown'
-Plugin 'jlanzarotta/bufexplorer'
+Plugin 'vim-pandoc/vim-pandoc'
+Plugin 'vim-pandoc/vim-pandoc-syntax'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
