@@ -38,6 +38,14 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'vim-pandoc/vim-pandoc'
 Plugin 'vim-pandoc/vim-pandoc-syntax'
 
+" Conditional plugins
+
+" Racer - Rust code completion engine
+" https://github.com/phildawes/racer
+if executable('racer')
+    Plugin 'racer-rust/vim-racer'
+endif
+
 " All of your Plugins must be added before the following line
 call vundle#end()
 
