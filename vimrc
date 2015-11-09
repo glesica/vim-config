@@ -22,6 +22,7 @@ Plugin 'bling/vim-airline'
 Plugin 'dart-lang/dart-vim-plugin'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'elzr/vim-json'
+Plugin 'fatih/vim-go'
 Plugin 'idris-hackers/idris-vim'
 Plugin 'jlanzarotta/bufexplorer'
 Plugin 'JuliaLang/julia-vim'
@@ -37,6 +38,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-pandoc/vim-pandoc'
 Plugin 'vim-pandoc/vim-pandoc-syntax'
+Plugin 'zah/nimrod.vim'
 
 " Conditional plugins
 
