@@ -20,6 +20,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'bling/vim-airline'
 Plugin 'dart-lang/dart-vim-plugin'
+Plugin 'editorconfig/editorconfig-vim'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'elzr/vim-json'
 Plugin 'fatih/vim-go'
@@ -213,6 +214,18 @@ augroup END
 nnoremap <C-n> :NERDTreeToggle<CR>
 autocmd vimenter * if !argc() | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+" ------------------------------------------------------------------------------
+" EditorConfig
+" ------------------------------------------------------------------------------
+
+if strlen(system('which editorconfig')) > 0
+    " Point at the binary
+    let g:EditorConfig_exec_path = system('which editorconfig')
+
+    " Make sure it works with Fugitive
+    let g:EditorConfig_exclude_patterns = ['fugitive://.*']
+endif
 
 " ------------------------------------------------------------------------------
 " OCaml
