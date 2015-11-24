@@ -109,7 +109,7 @@ augroup document
     autocmd BufRead,BufNewFile *.txt setlocal textwidth=80
     autocmd BufRead,BufNewFile *.wiki setlocal spell
     autocmd BufRead,BufNewFile *.wiki setlocal textwidth=80
-    autocmd BufRead,BufNewFile .bash* setlocal filetype=sh
+    autocmd BufRead,BufNewFile *.bash_* setlocal filetype=sh
 augroup END
 
 " ------------------------------------------------------------------------------
