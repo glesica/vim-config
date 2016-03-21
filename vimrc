@@ -18,18 +18,19 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'JuliaLang/julia-vim'
-Plugin 'Lokaltog/vim-distinguished'
 Plugin 'bling/vim-airline'
 Plugin 'dart-lang/dart-vim-plugin'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'elzr/vim-json'
 Plugin 'fatih/vim-go'
+Plugin 'godlygeek/tabular'
 Plugin 'idris-hackers/idris-vim'
 Plugin 'jlanzarotta/bufexplorer'
+Plugin 'JuliaLang/julia-vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'lambdatoast/elm.vim'
+Plugin 'Lokaltog/vim-distinguished'
 Plugin 'ludovicchabant/vim-gutentags'
 Plugin 'majutsushi/tagbar'
 Plugin 'mhinz/vim-signify'
@@ -38,6 +39,7 @@ Plugin 'osyo-manga/vim-over'
 Plugin 'rust-lang/rust.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
+Plugin 'Shougo/vimproc.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-pandoc/vim-pandoc'
 Plugin 'vim-pandoc/vim-pandoc-syntax'
@@ -49,6 +51,12 @@ Plugin 'zah/nimrod.vim'
 " https://github.com/phildawes/racer
 if executable('racer')
     Plugin 'racer-rust/vim-racer'
+endif
+
+" GHC-Mod - Haskell completion engine
+if executable('ghc-mod')
+    Plugin 'eagletmt/ghcmod-vim'
+    Plugin 'eagletmt/neco-ghc'
 endif
 
 " All of your Plugins must be added before the following line
@@ -250,9 +258,22 @@ endif
 " ------------------------------------------------------------------------------
 
 " I prefer two space indents instead of the default 4.
-augroup document
-    autocmd!
-    autocmd BufRead,BufNewFile *.jl setlocal tabstop=2
-    autocmd BufRead,BufNewFile *.jl setlocal shiftwidth=2
-augroup END
+autocmd FileType julia setlocal tabstop=2
+autocmd FileType julia setlocal shiftwidth=2
+
+" ------------------------------------------------------------------------------
+" Haskell
+" ------------------------------------------------------------------------------
+
+autocmd FileType haskell setlocal tabstop=2
+autocmd FileType haskell setlocal shiftwidth=2
+
+if executable('ghc-mod')
+    " Disable haskell-vim omnifunc
+    let g:haskellmode_completion_ghc = 0
+    let g:necoghc_enable_detailed_browse = 1
+    autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
+endif
+
+let g:haskell_tabular = 1
 
