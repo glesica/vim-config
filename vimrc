@@ -43,6 +43,7 @@ Plugin 'Shougo/vimproc.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-pandoc/vim-pandoc'
 Plugin 'vim-pandoc/vim-pandoc-syntax'
+Plugin 'vimwiki/vimwiki'
 Plugin 'zah/nimrod.vim'
 
 " Conditional plugins
@@ -276,3 +277,13 @@ if executable('ghc-mod')
 endif
 
 let g:haskell_tabular = 1
+
+" ------------------------------------------------------------------------------
+" Vim Wiki
+" ------------------------------------------------------------------------------
+
+let g:vimwiki_list = [
+            \{'path': '~/Wiki/wiki/', 'path_html': '~/Wiki/html/',
+            \ 'auto_export': 1, 'auto_toc': 1, 'auto_tags': 1}
+            \]
+
