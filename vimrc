@@ -44,6 +44,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'vim-pandoc/vim-pandoc'
 Plugin 'vim-pandoc/vim-pandoc-syntax'
 Plugin 'vimwiki/vimwiki'
+Plugin 'wlangstroth/vim-racket'
 Plugin 'zah/nimrod.vim'
 
 " Conditional plugins
@@ -84,6 +85,7 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_ocaml_checkers = ['merlin']
+let g:syntastic_enable_racket_racket_checker = 1
 set statusline+=%#warningmsg#
 set statusline+=%*
 set statusline+=%{SyntasticStatuslineFlag()}
