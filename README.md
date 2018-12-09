@@ -1,5 +1,8 @@
-Vim Configuration
+# Vim Configuration
+
 George Lesica <george@lesica.com>
+
+## Setup
 
 This is my Vim configuration. It uses Vundle to manage plugins and includes a
 handy script to set up all the necessary symlinks without clobbering the
@@ -23,3 +26,16 @@ To install plugins:
 Or, from the shell, to install plugins and quit:
 
     vim +PluginInstall +qall
+
+## Features
+
+There isn't a whole lot going on here, but there are a couple convenient
+features.
+
+  * `C-k`, `C-j` - move the current line up or down, respectively
+  * `C-a` - switch to the next buffer
+  * `<leader>stt` - change spaces to tabs in busted Makefiles
+  * `<leader>tws` - get rid of trailing whitespace
+  * `<leader>ev` - edit the `vimrc`
+  * `<leader>sv` - source the `vimrc`
+
