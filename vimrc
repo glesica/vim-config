@@ -77,6 +77,8 @@ augroup document
     autocmd BufRead,BufNewFile *.wiki setlocal spell
     autocmd BufRead,BufNewFile *.wiki setlocal textwidth=80
     autocmd BufRead,BufNewFile *.bash_* setlocal filetype=sh
+    autocmd BufRead,BufNewFile *.json setlocal shiftwidth=2
+    autocmd BufRead,BufNewFile *.json setlocal tabstop=2
 augroup END
 
 " ------------------------------------------------------------------------------
