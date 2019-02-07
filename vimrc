@@ -36,7 +36,7 @@ call vundle#end()
 " ------------------------------------------------------------------------------
 
 syntax on
-colorscheme slate
+colorscheme default
 set encoding=utf-8
 set laststatus=2
 set mouse=a                     " Make the mouse work in terminal
