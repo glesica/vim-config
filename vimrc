@@ -19,6 +19,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'bling/vim-airline'
+Plugin 'dart-lang/dart-vim-plugin'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'elzr/vim-json'
 Plugin 'godlygeek/tabular'
