@@ -15,7 +15,7 @@ Vundle is included as a submodule to make installation simpler. To clone:
     git submodule init
     git submodule update
 
-To add an additional plugin repo just add an entry in the vimrc file.
+To add an additional plugin repo just add an entry in the init.vim file.
 
     Plugin 'tpope/vim-fugitive' " Adds fugitive plugin
 
