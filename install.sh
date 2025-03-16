@@ -14,5 +14,5 @@ ln -s $DIR/vim ~/.config/nvim
 
 echo 'Linking init.vim'
 mv ~/.config/nvim/init.vim ~/.config/nvim/init.vim.bak
-ln -s $DIR/vimrc ~/.config/nvim/init.vim
+ln -s $DIR/init.vim ~/.config/nvim/init.vim
 
